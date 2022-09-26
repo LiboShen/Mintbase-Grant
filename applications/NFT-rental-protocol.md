@@ -11,20 +11,23 @@
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful Mintbase grant), please provide name and/or pull request of said grant on the first line of this section. -->
 
-This is a follow up project to improve and productionise our winning hackathon: https://devpost.com/software/nft-renting-platform
+This is a follow-up project to improve and productionize our winning hackathon: https://devpost.com/software/nft-renting-platform
 
 ### Overview
 
 Please provide the following:
 
 - If the name of your project is not descriptive, a tag line (one sentence summary).
-  - A Near NFT Rental service.
+  - A Near utility NFT collateral-free rental service.
 - A brief description of your project.
-  - Our project is to continue building an easy-to-use tool for users to rent/hire utility NFTs (e.g. in-game assets, virtual passes). We would like to use this grant to support important features like creator's royalty, optimise the contract, improve the UX, and potentially integrate with real applications.
+  - This proposal is to continue building an easy-to-use tool for users to rent/hire utility NFTs (e.g. in-game assets, virtual passes). We would like to use this grant to support important features like creator's royalty, optimize the contract, improve the UX, and potentially integrate with real applications.
 - An indication of how your project relates to / integrates into the Mintbase / NEAR ecosystem.
-  - Existing projects can integrate rental functions using our service with only a few lines of code, and no change are needed in the NFT contracts (as long as they conforms the [NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/))
+  - Our project uses Near smart contracts to handle the core rental business logic.
+  - With our service, dapps and games can support NFT rental in only a few lines of code. No change is needed in the NFT contracts (as long as they conform to the [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
+  - In addition, our project uses Mintbase indexer to read NFT information to provide a smooth user experience.
 - An indication of why your team is interested in creating this project.
-  - We believe that renting is an essential feature for a sustainable NFT market. It enables NFT owners to make more efficient use of their digital belongings and allows borrowers to experience the NFT in an inexpensive way. Rental service will also help develop more utilities for NFT and help to adopt more users to NFT and Metaverse.
+  - Both of us has paid close attention to blockchain technology since ~2016, and get involved with some related project in our spare time.
+  - We believe that renting is an essential feature of a sustainable NFT market. It enables NFT owners to make more efficient use of their digital belongings and allows borrowers to experience the NFT inexpensively. Rental service will also help develop more utilities for NFT and help to adopt more users to NFT and Metaverse.
 
 
 ### Project Details
@@ -32,11 +35,14 @@ Please provide the following:
 We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
 
 - Mockups/designs of any UI components
-<!-- TODO -->
-
+  - For the current UI, please see the MVP demo linked below.
 - Data models / API specifications of the core functionality
-<!-- TODO -->
-
+  - Rental contract:
+    - Uses `nft_on_approve` callback to initiate a new lease after the lender approves the contract for their NFT.
+    - A function `lending_accept` will be called (with the sufficient amount of rent paid) by the lender to accept and start the lease.
+    - A function `claim_back` will be called by the lender after the lease expires to retrieve the asset.
+    - A function `get_borrower` can be called by anyone to check who is the current rightful borrower of a given NFT.
+  - The marketplace design is WIP.
 - An overview of the technology stack to be used
   - Our smart contract will be developed in Rust, and our Web app will be built with React.
 - Documentation of core components, protocols, architecture, etc. to be deployed
@@ -48,37 +54,36 @@ We expect the teams to already have a solid idea about your project's expected f
 - What your project is _not_ or will _not_ provide or implement
   - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
 
-Our rental service will use the NEP-199 standard to split the rental revenue among the lender and the creators. Therefor the creators in NEAR and Mintbase ecosystem can get extra revenues from the rental market.
 
 ### Ecosystem Fit
 
 Help us locate your project in the Mintbase landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
-  - On one hand, our project allows users to experience NFT-enabled web3 experiences in an affordable way by remove the upfront capital barrier.
-  - On the other hand, it allows the NFT owners and the developers/creators to extra revenue from their assets or work.
-  - In genearl, our NFT rental solution can help boosting the NFT economy on Near.
+  - First, our project allows users to experience NFT-enabled web3 experiences affordably by removing the upfront capital barrier.
+  - Second, it allows the NFT owners and the developers/creators to extra revenue from their assets or work.
+  - Finally, our rental service will use the NEP-199 standard to split the rental revenue among the lender and the creators. Therefore the creators in the NEAR and Mintbase ecosystem can get extra revenues from the rental market.
+  - In general, our NFT rental solution can help boost the NFT economy on NEAR.
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-  - The developers and users of any dapps and games which utilise NFTs.
+  - The developers and users of any dapps and games which utilize NFTs.
 - What need(s) does your project meet?
-  - For the utility NFT owners, we meet their needs for a safe and convenient way to earn revenue from their NFT assets.
-  - For poeple who are interested in certain utility NFTs, we meet their needs for an affordable way to rent the NFT to experience.
-  - For developers and creators, we meet their needs for exploring the renting revenue and business model.
+  - For utility NFT owners, we provide them with a safe and convenient way to earn revenue from their NFT assets.
+  - For people who are interested in certain utility NFTs, we provide them with an affordable way to rent the NFT to experience.
+  - For developers and creators, we meet their needs of exploring the renting revenue and business model.
 - Are there any other projects similar to yours in the Mintbase / NEAR ecosystem?
   - If so, how is your project different?
-    - PawnNFT: As the name suggested, it works like a pawn shop rather than, for example, a car rental service. It is a finance service where the NFTs are used as colleteral. 
+    - PawnNFT: As the name suggested, it works like a pawn shop rather than, for example, a car rental service. It is a finance service where the NFTs are used as collateral. 
   - If not, are there similar projects in related ecosystems?
-    - https://double.one/: They requires the NFT contracts conform a special NFT standard they issued, i.e. don't support the standard ERC-721 NFTs.
+    - https://double.one/: They require the NFT contracts conform to a special NFT standard they issued, i.e. don't support the standard ERC-721 NFTs.
     - ReNFT on Ethereum and Avalanche: Lenders in their platform have no way to trade their leasing assets until the lease expires.
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
-- Name of team leader
-  Libo Shen
 - Names of team members
-  Steven Yu
+  - Libo Shen
+  - Steven Yu
 
 ### Contact
 
@@ -98,16 +103,16 @@ Help us locate your project in the Mintbase landscape and what problems it tries
 <!-- If anyone on your team has applied for a grant at the Mintbase previously, please list the name of the project and legal entity here. -->
 
 - Libo Shen - Full-stack engineer, worked at Google London for 6 years, Head of Engineering of a startup.
-- Steven Yu - Experienced Machine Learning Engineer with strong analytical and technical skills. Strong software engineering professional with a MSc Computer Science from University of Oxford.
+- Steven Yu - Experienced Machine Learning Engineer with strong analytical and technical skills. Strong software engineering professional with an MSc in Computer Science from the University of Oxford.
 
-We have participated and won the IRL hackathon in Nearcon 2022: https://devpost.com/software/nft-renting-platform.
+We have participated in and won the IRL hackathon in Nearcon 2022: https://devpost.com/software/nft-renting-platform.
 
-In the past, we also worked on Solana build our NFT store: 
-<!-- TODO: github link -->
+In the past, we also worked on Solana to build our NFT store: https://github.com/stevenyu530/metaplex
+<!-- TODO: set it public -->
 
 ### Team Code Repos
 
-- https://github.com/LiboShen/nft-rental (To be moved to a org account)
+- https://github.com/LiboShen/nft-rental (To be moved to an org account)
 - https://github.com/LiboShen/mooncake-nft
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
@@ -127,7 +132,7 @@ As mentioned above, we started this project during the 2022 NEARCON IRL Hackatho
 
 ## Development Roadmap :nut_and_bolt:
 
-**Note**: All of our milestones do not deliver any server side programs. We will continousely deploy our smart contracts to testnet and our frontend to hosting platforms (like Netlify). As such there is no need for Dockerfiles to test our deliverables.
+**Note**: All of our milestones do not deliver any server-side programs. We will continuously deploy our smart contracts to testnet and our frontend to hosting platforms (like Netlify). As such, there is no need for Dockerfiles to test our deliverables.
 
 
 ### Overview
@@ -169,7 +174,7 @@ As mentioned above, we started this project during the 2022 NEARCON IRL Hackatho
 | 1. | Support NEP-141 FT Payment | **The rental contract supports NEP-141 FTs as rent payment.** The web app allows users to choose popular FT as the rent currency. |  
 | 2. | Owner's IOU NFT | An NFT will be issued to the lender when the lease starts. The NFT represents that ownership of the rented NFT and rent revenue. **It enables the owner to trade their assets while being rented.** |  
 | 3. | JavaScript Integration SDK | A package to make dapp and web game developers easily integrate with our service. |
-<!-- | 4. | Allow Early Lease Termination | If both the lender and the borrow agree, the NFT can be returned before the expire date with an agree percentage of rent refunded to the borrower. |   -->
+<!-- | 4. | Allow Early Lease Termination | If both the lender and the borrower agree, the NFT can be returned before the expiration date with an agreed percentage of rent refunded to the borrower. |   -->
 
 ### Milestone 3 - Marketplace
 
@@ -194,8 +199,12 @@ As mentioned above, we started this project during the 2022 NEARCON IRL Hackatho
 Please include here
 
 - how you intend to use, enhance, promote and support your project in the short term, and
-  - If given the 
+  - Content marketing.
+  - Collaborate with gaming projects/DAOs on NEAR.
+  - Try to contribute our approach to the NEP standard, to facilitate adoption.
 - the team's long-term plans and intentions in relation to it.
+  - Hosting Game Jams (i.e. Hackathon for game dev) to encourage game devs to explore NFT-based web games.
+  - Figure out a suitable governance approach and fee structure.
 
 
 ## Additional Information :heavy_plus_sign:
