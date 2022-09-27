@@ -58,25 +58,35 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 
 ### Ecosystem Fit
 
-- Where and how does your project fit into the ecosystem?
-  - First, our project allows users to experience NFT-enabled web3 experiences affordably by removing the upfront capital barrier.
-  - Second, it allows the NFT owners and the developers/creators to extra revenue from their assets or work.
+**Where and how does our project fit into the ecosystem?**
+  - Firstly, our project allows users to experience NFT-enabled Web3 features affordably, by removing the upfront capital barrier, which can be significant for new users.
+  - Secondly, it benefits NFT owners by using digital asset more efficiently.
+  - Thirdly, it helps developers/creators to gain revenue through royalty.
   - Finally, our rental service will use the NEP-199 standard to split the rental revenue among the lender and the creators. Therefore the creators in the NEAR and Mintbase ecosystem can get extra revenues from the rental market.
-  - In general, our NFT rental solution can help boost the NFT economy on NEAR.
-- Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-  - The developers and users of any dapps and games which utilize NFTs.
-- What need(s) does your project meet?
-  - For utility NFT owners, we provide them with a safe and convenient way to earn revenue from their NFT assets.
-  - For people who are interested in certain utility NFTs, we provide them with an affordable way to rent the NFT to experience.
-  - For developers and creators, we meet their needs of exploring the renting revenue and business model.
-- Are there any other projects similar to yours in the Mintbase / NEAR ecosystem?
-  - If so, how is your project different?
+  - In general, our NFT rental solution helps to open a derived rental market, boost both NFT economy and utilities on NEAR, and ultimately adopt more users to Web3.
+
+
+**Who is our target audience ?**
+  - The developers of dapps and games who want to add NFT rental function to their app.
+  - Users who want to rent/hire NFTs.
+
+
+**What need(s) does our project meet?**
+  - For utility NFT owners, we provide them with a safe and convenient way to earn revenue from retning their NFT assets.
+  - For people who are interested in certain utility NFTs, we offer them an affordable way to rent the NFT to experience.
+  - For developers and creators, we enable them to explore new business models through renting.
+
+
+**Are there any other projects similar to ours in the Mintbase / NEAR ecosystem?**
+  - If so, how is our project different?
     - PawnNFT: As the name suggested, it works like a pawn shop rather than, for example, a car rental service. It is a finance service where the NFTs are used as collateral. 
+
   - If not, are there similar projects in related ecosystems?
     - https://double.one/: They require the NFT contracts conform to a special NFT standard they issued, i.e. don't support the standard ERC-721 NFTs.
     - ReNFT on Ethereum and Avalanche: Lenders in their platform have no way to trade their leasing assets until the lease expires.
-    <!-- TODO: Discuss the difference -->
 
+
+  - Our project provides a NEAR native solution through a non-collateral approach.It also focuses on prividing a smooth user and developer experience, by providing SDK for existing projects to integreate seamlessly. 
 ## Team :busts_in_silhouette:
 
 ### Team members
