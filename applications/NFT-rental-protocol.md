@@ -11,7 +11,7 @@
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful Mintbase grant), please provide name and/or pull request of said grant on the first line of this section. -->
 
-Our project is a follow-up project to build on top and productionize our NEARCON IRL Hackathon winning project [RentVerse](https://devpost.com/software/nft-renting-platform). 
+Our project is a follow-up project to build on top and productionize our NEARCON2022 IRL Hackathon winning project [RentVerse](https://devpost.com/software/nft-renting-platform). A significant amount of new features and designs has been added to support the application of this grant.
 
 ### Overview
 
@@ -23,20 +23,20 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 
 **Relevance to Mintbase and NEAR** 
   - Mintbase's NFT indexer is used in our project for retriving NFT information, which helps to provide a smooth user experience.
-  - Our NFT rental function will also benefit Mintbase by creating a widely needed rental market ferived from Mintbased created NFTs. 
+  - Our NFT rental function will benefit Mintbase by creating a widely needed rental market derived from Mintbased created NFTs. 
   - NEAR smart contracts are used to handle the core rental business logic. The team also has plans to leverage the experience on building rental product to create high-quality rental proposal on NEAR, which will benefit the ecosystem. 
-  - Our service and SDK will enable NEAR dapps and games to seamlessly integrate NFT Rental functions  with miniume code intrusion. No code change is needed from origianl NFT contracts (as long as they are in line with [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
+  - Our service and SDK will enable NEAR dapps and games to seamlessly integrate NFT Rental functions with miniume code intrusion. No code change is needed from origianl NFT contracts (as long as they are in line with [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
  
 
 **Team's Motivation**
-  - Both team members are seasoned engineering professionals with a stong intest in blockain and web3 technologies. We have been cloesly following blockchain technology since ~2016 and have participated in several related projects in spare time (details in Team secion). We are commited to build trully useful products for an open web world.
-  - We believe that renting is an essential feature of a sustainable NFT market. It enables NFT owners to make more efficient use of their digital belongings and allows borrowers to experience the NFT inexpensively. Rental service will also help develop more utilities for NFT and help to adopt more users to NFT and Metaverse.
+  - Both team members are seasoned engineering professionals with a strong intest in blockain and web3 technologies. We have been cloesly following blockchain technology since ~2016 and have participated in several related projects in spare time (details in Team section). We are commited to  build trully useful products for an open web world.
+  - We believe that renting is an essential feature of a sustainable NFT market. It enables NFT owners to make more efficient use of their digital belongings and allows borrowers to experience the NFT inexpensively. Rental service will also help develop more use cases for NFT and help to adopt more users to NFT and Metaverse.
   - The contiually expanding adoption of NFTs in and beyond NEAR ecosystem provides a solid market space for this derived rental market. NEAR native solution is currently limited. The team is commited to explore this market and build truely useful NEAR native solutions.
 
 
 ### Project Details
 
-- The current UI and designs have been covered in our MVP demo and deployed to testnet. (Links below) 
+- The current UI and designs are covered in our MVP demo and deployed on testnet. (links attached below) 
 - Data models / API specifications of the core functionality
   - Rental contract:
     - Uses `nft_on_approve` callback to initiate a new lease after the lender approves the contract for their NFT.
@@ -62,7 +62,7 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
   - Firstly, our project allows users to experience NFT-enabled Web3 features affordably, by removing the upfront capital barrier, which can be significant for new users.
   - Secondly, it benefits NFT owners by using digital asset more efficiently.
   - Thirdly, it helps developers/creators to gain revenue through royalty.
-  - Finally, our rental service will use the NEP-199 standard to split the rental revenue among the lender and the creators. Therefore the creators in the NEAR and Mintbase ecosystem can get extra revenues from the rental market.
+  - Finally, our rental service will use the [NEP-199 standard](https://github.com/near/NEPs/blob/master/neps/nep-0199.md) to split the rental revenue among the lender and the creators. Therefore the creators in the NEAR and Mintbase ecosystem can get extra revenues from the rental market.
   - In general, our NFT rental solution helps to open a derived rental market, boost both NFT economy and utilities on NEAR, and ultimately adopt more users to Web3.
 
 
@@ -92,8 +92,8 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 ### Team members
 
 - Names of team members
-  - Libo Shen
-  - Steven Yu
+  - **Libo Shen**
+  - **Steven Yu**
 
 ### Contact
 
@@ -112,10 +112,16 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 
 <!-- If anyone on your team has applied for a grant at the Mintbase previously, please list the name of the project and legal entity here. -->
 
-- **Libo Shen**: Full-stack engineer, worked at Google London for 6 years, Head of Engineering of a tech startup.
-- **Steven Yu**: Experienced machine learning engineer worked in both front-office trading and a cybersecurity startup. Strong software engineering professional with an MSc in Computer Science from the University of Oxford.
+- **Libo Shen**: 
+  - Full-stack engineer, worked at Google London for 6 years, Head of Engineering of a tech startup.
+  - GitHub: https://github.com/LiboShen
+  - LinkedIn: https://www.linkedin.com/in/libo-shen/
+- **Steven Yu**: 
+  - Experienced machine learning engineer worked in both front-office trading and a cybersecurity startup. Strong software engineering professional with an MSc in Computer Science from the University of Oxford.
+  - GitHub: https://github.com/stevenyu530
+  - LinkedIn: https://www.linkedin.com/in/tianlin-steven-yu/
 
-We have participated in and won the IRL hackathon in Nearcon 2022: https://devpost.com/software/nft-renting-platform.
+The team has participated in and won the IRL hackathon in Nearcon 2022: https://devpost.com/software/nft-renting-platform.
 
 In the past, we also worked on Solana to build our NFT store: https://github.com/stevenyu530/metaplex
 
@@ -125,15 +131,6 @@ In the past, we also worked on Solana to build our NFT store: https://github.com
 - https://github.com/LiboShen/nft-rental (To be moved to an org account)
 - https://github.com/LiboShen/mooncake-nft
 
-Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
-
-- https://github.com/LiboShen
-- https://github.com/stevenyu530
-
-### Team LinkedIn Profiles (if available)
-
-- https://www.linkedin.com/in/libo-shen/
-- https://www.linkedin.com/in/tianlin-steven-yu/
 
 ## Development Status :open_book:
 
