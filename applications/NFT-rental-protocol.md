@@ -116,10 +116,13 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
   - Full-stack engineer, worked at Google London for 6 years, Head of Engineering of a tech startup.
   - GitHub: https://github.com/LiboShen
   - LinkedIn: https://www.linkedin.com/in/libo-shen/
+  - Email: liboooshen@gmail.com
+  
 - **Steven Yu**: 
   - Experienced machine learning engineer worked in both front-office trading and a cybersecurity startup. Strong software engineering professional with an MSc in Computer Science from the University of Oxford.
   - GitHub: https://github.com/stevenyu530
   - LinkedIn: https://www.linkedin.com/in/tianlin-steven-yu/
+  - Email: stevenyu530@gmail.com 
 
 The team has participated in and won the IRL hackathon in Nearcon 2022: https://devpost.com/software/nft-renting-platform.
 
