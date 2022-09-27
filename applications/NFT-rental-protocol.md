@@ -11,7 +11,7 @@
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful Mintbase grant), please provide name and/or pull request of said grant on the first line of this section. -->
 
-Our project is a follow-up project to build on top and productionize our NEARCON2022 IRL Hackathon winning project [RentVerse](https://devpost.com/software/nft-renting-platform). A significant amount of new features and designs has been added to support the application of this grant.
+Our project is a follow-up of our winning project in NEARCON 2022 IRL Hackathon: [RentVerse](https://devpost.com/software/nft-renting-platform). A significant amount of new features and designs have been added to support our application for this grant.
 
 ### Overview
 
@@ -19,19 +19,19 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 
 **About RentVerse**
   
-  We propose to continue building an easy-to-use tool for users to rent/hire utility NFTs (e.g. in-game assets, virtual passes) in a collatural-free approach. We plan to use this grant to support implementing important features (such as creator's royalty, multi FTs payment), optimizing contracts, improving service UX, and potentially integrating with real-life applications. Ideally, we will build out service to be product ready. 
+  We propose to continue building an easy-to-use tool for users to rent/hire utility NFTs (e.g. in-game assets, virtual passes) in a collateral-free approach. We plan to use this grant to support implementing important features (such as creator's royalty, multi FTs payment), optimizing contracts, improving service UX, and potentially integrating with real-life applications. Ideally, we will build our service to be production ready. 
 
 **Relevance to Mintbase and NEAR** 
-  - Mintbase's NFT indexer is used in our project for retriving NFT information, which helps to provide a smooth user experience.
-  - Our NFT rental function will benefit Mintbase by creating a widely needed rental market derived from Mintbased created NFTs. 
-  - NEAR smart contracts are used to handle the core rental business logic. The team also has plans to leverage the experience on building rental product to create high-quality rental proposal on NEAR, which will benefit the ecosystem. 
-  - Our service and SDK will enable NEAR dapps and games to seamlessly integrate NFT Rental functions with miniume code intrusion. No code change is needed from origianl NFT contracts (as long as they are in line with [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
+  - Mintbase's NFT indexer is used in our project for retrieving NFT information, which helps to provide a smooth user experience.
+  - Our NFT rental function will benefit Mintbase by creating a widely needed rental market derived from Mintbase created NFTs. 
+  - NEAR smart contracts are used to handle the core rental business logic. The team also has plans to leverage the experience of building our rental product to propose a high-quality rental protocol on NEAR, which will benefit the ecosystem. 
+  - Our service and SDK will enable NEAR dapps and games to seamlessly integrate NFT Rental functions with miniumal code intrusion. No code change is needed from original NFT contracts (as long as they are in line with the [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
  
 
 **Team's Motivation**
-  - Both team members are seasoned engineering professionals with a strong intest in blockain and web3 technologies. We have been cloesly following blockchain technology since ~2016 and have participated in several related projects in spare time (details in Team section). We are commited to  build trully useful products for an open web world.
+  - Both team members are seasoned engineering professionals with a strong interest in blockchain and web3 technologies. We have been closely following blockchain technology since ~2016 and have participated in several related projects in our spare time (details in the Team section). We are committed to building truly useful products for an open web world.
   - We believe that renting is an essential feature of a sustainable NFT market. It enables NFT owners to make more efficient use of their digital belongings and allows borrowers to experience the NFT inexpensively. Rental service will also help develop more use cases for NFT and help to adopt more users to NFT and Metaverse.
-  - The contiually expanding adoption of NFTs in and beyond NEAR ecosystem provides a solid market space for this derived rental market. NEAR native solution is currently limited. The team is commited to explore this market and build truely useful NEAR native solutions.
+  - The constant expanding adoption of NFTs in and beyond NEAR ecosystem provides a solid market space for this derived rental market. NEAR native solution is currently limited. The team is aiming to provide highly functional NEAR native solutions.
 
 
 ### Project Details
@@ -44,11 +44,10 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
     - A function `claim_back` will be called by the lender after the lease expires to retrieve the asset.
     - A function `get_borrower` can be called by anyone to check who is the current rightful borrower of a given NFT.
   - A marketplace design is WIP.
-  - Rental payment will potentiall include an integration with Roketo API.
 - Technology Stack:
   - Smart Contracts: Rust, NEAR SDK, Mintbase API
   - Front End: React
-  - Hosting: Netlify
+  - Hosting: Static CDN (e.g. Netlify)
 - PoC/MVP or other relevant prior work or research on the topic
   - NEARCON IRL Hackathon submission: https://devpost.com/software/nft-renting-platform
   - Demo vedio: https://vimeo.com/749514302
@@ -59,20 +58,19 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 ### Ecosystem Fit
 
 **Where and how does our project fit into the ecosystem?**
-  - Firstly, our project allows users to experience NFT-enabled Web3 features affordably, by removing the upfront capital barrier, which can be significant for new users.
-  - Secondly, it benefits NFT owners by using digital asset more efficiently.
-  - Thirdly, it helps developers/creators to gain revenue through royalty.
-  - Finally, our rental service will use the [NEP-199 standard](https://github.com/near/NEPs/blob/master/neps/nep-0199.md) to split the rental revenue among the lender and the creators. Therefore the creators in the NEAR and Mintbase ecosystem can get extra revenues from the rental market.
+  - First, our project **allows users to experience NFT-enabled Web3 features affordably**, by removing the upfront capital barrier, which can be significant for new users.
+  - Second, it benefits NFT owners by giving them a **reliable way to earn passive income in Web3**, creating more financial incentives.
+  - Finally, it helps developers/creators to **gain revenue through royalty** (via [NEP-199](https://github.com/near/NEPs/blob/master/neps/nep-0199.md)) and explore **more sustainable business models**.
   - In general, our NFT rental solution helps to open a derived rental market, boost both NFT economy and utilities on NEAR, and ultimately adopt more users to Web3.
 
 
-**Who is our target audience ?**
+**Who is our target audience?**
   - The developers of dapps and games who want to add NFT rental function to their app.
   - Users who want to rent/hire NFTs.
 
 
 **What need(s) does our project meet?**
-  - For utility NFT owners, we provide them with a safe and convenient way to earn revenue from retning their NFT assets.
+  - For utility NFT owners, we provide them with a safe and convenient way to earn revenue from renting their NFT assets.
   - For people who are interested in certain utility NFTs, we offer them an affordable way to rent the NFT to experience.
   - For developers and creators, we enable them to explore new business models through renting.
 
@@ -137,7 +135,7 @@ In the past, we also worked on Solana to build our NFT store: https://github.com
 
 ## Development Status :open_book:
 
-As mentioned above, the project is initialied from NEARCON2022 IRL Hackathon. The code currently locates at https://github.com/LiboShen/nft-rental. A significant amount of new features and designs have been added to the initial idea to support the application for this grant.
+As mentioned above, RentVerse originally started during NEARCON 2022 IRL Hackathon. The code currently locates at https://github.com/LiboShen/nft-rental. A significant amount of new features and designs have been added to the initial idea to support the application for this grant.
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -206,17 +204,17 @@ As mentioned above, the project is initialied from NEARCON2022 IRL Hackathon. Th
 
 ## Future Plans
 
-The team has designed an ample amount of featuers and integrations for the product which we plan to iimplement if resources are allowd. Part of the furture plans are covered here
+The team has designed an ample amount of features and integrations for the product which we plan to implement if resources are allowed. Part of the plans are covered here
 
 In the short-term:
-  - Content marketing to promte the importance of NFT rental functions
-  - Collaborate with gaming, social projects and DAOs on NEAR add rental feaures
-  - Integrate with exsiting NEAR dapps such as Roketo to enable streaming rent payment
+  - Content marketing to promote the importance of NFT rental functions
+  - Collaborate with gaming, social projects and DAOs on NEAR to promote NFT utilities and rental.
+  - Integrate with existing NEAR dapps such as Roketo to enable streaming rent payment
 
 In the long-term:
   - Hosting Game Jams (i.e. Hackathon for game dev) to encourage game devs to explore NFT-based web games.
   - Design an effective governance approach and fee structure.
-  - Leverage our experience to contribute to developing a better NEP standard and to facilitate mass adoption.
+  - Leverage our experience to contribute to high-quality NEP standards and facilitate mass adoption in the ecosystem.
 
 
 ## Additional Information :heavy_plus_sign:
