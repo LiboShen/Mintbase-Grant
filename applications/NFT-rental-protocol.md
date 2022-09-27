@@ -36,27 +36,24 @@ RentVerse is a collateral-free utility NFT rental service built on NEAR.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
-- Mockups/designs of any UI components
-  - For the current UI, please see the MVP demo linked below.
+- The current UI and designs have been covered in our MVP demo and deployed to testnet. (Links below) 
 - Data models / API specifications of the core functionality
   - Rental contract:
     - Uses `nft_on_approve` callback to initiate a new lease after the lender approves the contract for their NFT.
     - A function `lending_accept` will be called (with the sufficient amount of rent paid) by the lender to accept and start the lease.
     - A function `claim_back` will be called by the lender after the lease expires to retrieve the asset.
     - A function `get_borrower` can be called by anyone to check who is the current rightful borrower of a given NFT.
-  - The marketplace design is WIP.
-- An overview of the technology stack to be used
-  - Our smart contract will be developed in Rust, and our Web app will be built with React.
-- Documentation of core components, protocols, architecture, etc. to be deployed
-<!-- TODO -->
+  - A marketplace design is WIP.
+  - Rental payment will potentiall include an integration with Roketo API.
+- Technology Stack:
+  - Smart Contracts: Rust, NEAR SDK, Mintbase API
+  - Front End: React
+  - Hosting: Netlify
 - PoC/MVP or other relevant prior work or research on the topic
   - NEARCON IRL Hackathon submission: https://devpost.com/software/nft-renting-platform
   - Demo vedio: https://vimeo.com/749514302
   - Testnet MVP app: https://rentverse.netlify.app/
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
+
 
 
 ### Ecosystem Fit
