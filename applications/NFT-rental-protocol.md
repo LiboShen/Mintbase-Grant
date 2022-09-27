@@ -11,23 +11,27 @@
 
 If this is an application for a follow-up grant (the continuation of an earlier, successful Mintbase grant), please provide name and/or pull request of said grant on the first line of this section. -->
 
-Our project is a follow-up project to build on top and productionize our NEARCON IRL Hackathon winning project [RentVerse](https://devpost.com/software/nft-renting-platform) 
+Our project is a follow-up project to build on top and productionize our NEARCON IRL Hackathon winning project [RentVerse](https://devpost.com/software/nft-renting-platform). 
 
 ### Overview
 
 RentVerse is a collateral-free utility NFT rental service built on NEAR.
 
 **About RentVerse**
-  - This proposal is to continue building an easy-to-use tool for users to rent/hire utility NFTs (e.g. in-game assets, virtual passes). We would like to use this grant to support important features like creator's royalty, optimize the contract, improve the UX, and potentially integrate with real applications.
+  
+  We propose to continue building an easy-to-use tool for users to rent/hire utility NFTs (e.g. in-game assets, virtual passes) in a collatural-free approach. We plan to use this grant to support implementing important features (such as creator's royalty, multi FTs payment), optimizing contracts, improving service UX, and potentially integrating with real-life applications. Ideally, we will build out service to be product ready. 
 
 **Relevance to Mintbase and NEAR** 
-  - Our project uses NEAR smart contracts to handle the core rental business logic.
-  - With our service, dapps and games can support NFT rental in only a few lines of code. No change is needed in the NFT contracts (as long as they conform to the [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
-  - In addition, our project uses Mintbase indexer to read NFT information to provide a smooth user experience.
+  - Mintbase's NFT indexer is used in our project for retriving NFT information, which helps to provide a smooth user experience.
+  - Our NFT rental function will also benefit Mintbase by creating a widely needed rental market ferived from Mintbased created NFTs. 
+  - NEAR smart contracts are used to handle the core rental business logic. The team also has plans to leverage the experience on building rental product to create high-quality rental proposal on NEAR, which will benefit the ecosystem. 
+  - Our service and SDK will enable NEAR dapps and games to seamlessly integrate NFT Rental functions  with miniume code intrusion. No code change is needed from origianl NFT contracts (as long as they are in line with [Near NFT standard](https://nomicon.io/Standards/Tokens/NonFungibleToken/)).
+ 
 
 **Team's Motivation**
-  - Both of us has paid close attention to blockchain technology since ~2016, and get involved with some related project in our spare time.
+  - Both team members are seasoned engineering professionals with a stong intest in blockain and web3 technologies. We have been cloesly following blockchain technology since ~2016 and have participated in several related projects in spare time (details in Team secion). We are commited to build trully useful products for an open web world.
   - We believe that renting is an essential feature of a sustainable NFT market. It enables NFT owners to make more efficient use of their digital belongings and allows borrowers to experience the NFT inexpensively. Rental service will also help develop more utilities for NFT and help to adopt more users to NFT and Metaverse.
+  - The contiually expanding adoption of NFTs in and beyond NEAR ecosystem provides a solid market space for this derived rental market. NEAR native solution is currently limited. The team is commited to explore this market and build truely useful NEAR native solutions.
 
 
 ### Project Details
