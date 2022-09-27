@@ -137,7 +137,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-As mentioned above, we started this project during the 2022 NEARCON IRL Hackathon. The code currently locates at https://github.com/LiboShen/nft-rental. 
+As mentioned above, the project is initialied from NEARCON2022 IRL Hackathon. The code currently locates at https://github.com/LiboShen/nft-rental. A significant amount of new features and designs have been added to the initial idea to support the application for this grant.
 
 
 ## Development Roadmap :nut_and_bolt:
@@ -186,7 +186,7 @@ As mentioned above, we started this project during the 2022 NEARCON IRL Hackatho
 | 3. | JavaScript Integration SDK | A package to make dapp and web game developers easily integrate with our service. |
 <!-- | 4. | Allow Early Lease Termination | If both the lender and the borrower agree, the NFT can be returned before the expiration date with an agreed percentage of rent refunded to the borrower. |   -->
 
-### Milestone 3 - Marketplace for NFT rental
+### Milestone 3 - Rental Marketplace for NFTs
 
 - **Estimated duration:** 1 month
 - **FTE:**  2 (plus UX, editing and potential dev contractors)
@@ -206,19 +206,20 @@ As mentioned above, we started this project during the 2022 NEARCON IRL Hackatho
 
 ## Future Plans
 
-Please include here
+The team has designed an ample amount of featuers and integrations for the product which we plan to iimplement if resources are allowd. Part of the furture plans are covered here
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-  - Content marketing.
-  - Collaborate with gaming projects, social projects and DAOs on NEAR.
-  - Try to contribute our approach to the NEP standard, to facilitate adoption.
-- the team's long-term plans and intentions in relation to it.
+In the short-term:
+  - Content marketing to promte the importance of NFT rental functions
+  - Collaborate with gaming, social projects and DAOs on NEAR add rental feaures
+  - Integrate with exsiting NEAR dapps such as Roketo to enable streaming rent payment
+
+In the long-term:
   - Hosting Game Jams (i.e. Hackathon for game dev) to encourage game devs to explore NFT-based web games.
-  - Figure out a suitable governance approach and fee structure.
+  - Design an effective governance approach and fee structure.
+  - Leverage our experience to contribute to developing a better NEP standard and to facilitate mass adoption.
 
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Mintbase Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
-
-Personal recommendation via Maria Magdalena
+**How did you hear about the Grants Program?** 
+- Personal recommendation via Maria Magdalena
